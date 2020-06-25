@@ -7,12 +7,10 @@ script:
   - cd ..
 deploy:
   provider: releases
-  
   pre-release: true
   api_key: $GITHUB_TOKEN
   skip_cleanup: true
   on:
-    repo: Timanchik/LB-6
-    
+    repo: Timanchik/LB-6  
     branch: dev
     tags: true
