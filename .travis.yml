@@ -2,8 +2,6 @@ branches:
   only:
   - master
   - dev
-script:
-  echo Starting work...
 import:
 - source: .travis/default.yml
   if: branch = dev
