@@ -1,16 +1,10 @@
-
+  
 language: python
 puthon: 3.8
-script: 
-  - cd PythonApplication1
-  - pytest
-  - cd ..
-deploy:
-  provider: releases
-  pre-release: true
-  api_key: $GITHUB_TOKEN
-  skip_cleanup: true
-  on:
-    repo: Timanchik/LB-6  
-    branch: dev
-    tags: true
+script:
+  echo Starting work...
+import:
+- source: .travis/default.yml
+  if: branch = dev
+- source: .travis/release.yml
+  if: branch = master
