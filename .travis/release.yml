@@ -11,4 +11,4 @@ deploy:
   on:
     repo: Timanchik/LB-6
     branch: master
-    tags: true
+    tags: false
